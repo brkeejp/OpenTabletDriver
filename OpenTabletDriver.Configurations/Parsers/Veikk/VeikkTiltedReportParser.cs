@@ -9,7 +9,7 @@ namespace OpenTabletDriver.Configurations.Parsers.Veikk
             // Tablet Report
             if (report[1] == 0x41) {
                 // throw exception if report length less than 13 byte
-                if (report.length() < 13) throw new ArgumentOutOfRangeException("byte[] report", report, "The report length less than expected length which is 13");
+                if (report.Length < 13) throw new ArgumentOutOfRangeException("byte[] report", report, "The report length less than expected length which is 13");
                     
                 // out of range report
                 if (report[2] == 0xC0) return new OutOfRangeReport(report);
