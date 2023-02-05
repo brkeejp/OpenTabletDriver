@@ -1,3 +1,4 @@
+using System;
 using OpenTabletDriver.Tablet;
 
 namespace OpenTabletDriver.Configurations.Parsers.Veikk
