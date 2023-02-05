@@ -12,7 +12,7 @@ namespace OpenTabletDriver.Configurations.Parsers.Veikk
                 if (report.length() < 13) throw new ArgumentOutOfRangeException("byte[] report", report, "The report length less than expected length which is 13");
                     
                 // out of range report
-                if (report[2] === 0xC0) return new OutOfRangeReport(report);
+                if (report[2] == 0xC0) return new OutOfRangeReport(report);
 
                 // Veikk tilted tablet report
                 return new VeikkTiltedTabletReport(report);
