@@ -6,8 +6,7 @@ namespace OpenTabletDriver.Configurations.Parsers.Veikk
     {
         public IDeviceReport Parse(byte[] report)
         {
-
-            switch (report[1]) {
+            return (report[1]) switch {
                 // Tablet Report
                 (0x41) => {
                     // throw exception if report length less than 13 byte
