@@ -6,7 +6,7 @@ namespace OpenTabletDriver.Configurations.Parsers.Veikk
 {
     public struct VeikkTiltedTabletReport : ITabletReport, ITiltReport
     {
-        public VeikkTabletReport(byte[] report)
+        public VeikkTiltedTabletReport(byte[] report)
         {
             Raw = report;
 
